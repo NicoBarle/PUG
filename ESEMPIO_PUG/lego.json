@@ -1,13 +1,13 @@
 {
  "profiles": [
    {
-     "firstname": "Tom",
-     "lastname": "Jagger",
-     "bio": "",
-     "tagline": "Developer, Writer and Speaker",
-     "twitter": "https://twitter.com/",
+     "SetNumber": "LEGO 3825",
+     "SetTheme": "BATMAN",
+     "SetName": "MOTO DELLA MORTE",
+     "Year": "struziosssssssssssss",
+     "istruzioni":["istrbatman1.jpeg","istrbatman2.jpeg","istrbatman3.jpeg"],
      "imgSrc": "copertina.jpg",
-     "id": "tom"
+     "id": "1"
    },
 
    {

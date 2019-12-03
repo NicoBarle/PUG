@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 
-const lego = require('./lego.json'); //Copia il file people.json dentro la variabile people
+const lego = require('./lego.json'); //Copia il file lego.json dentro la variabile lego
 
 app.set('view engine', 'pug');   //Dico a express di usare pug come motore di template
 
@@ -15,13 +15,14 @@ app.get('/', function (req, res) {
  });
 });
 
-/*app.get('/profile', (req, res) => {
- const person = people.profiles.find((p) => p.id === req.query.id);
+app.get('/profile', (req, res) => {
+ const object = lego.profiles.find((p) => p.SetNumber === req.query.SetNumber);
   res.render('profile', {
-    title: `About ${person.firstname} ${person.lastname}`,
-    person,
+    title: `About ${object.SetTheme} ${object.SetName}`,
+    istruzioni: `xd ${object.istruzioni}`,
+    object,
   });
-});*/
+});
 
 app.listen(3000, function () {
   console.log('SALAME VEGANO');
